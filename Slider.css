@@ -1,0 +1,103 @@
+.s-container{
+    position: relative;
+    top: 30px;
+
+
+}
+
+
+.s-container .swiper{
+    width: 65%;
+    height: 18rem;
+    position: unset;
+    
+}
+
+.s-container .swiper-slide{
+    background: rgb(224, 166, 218);
+    display: flex;
+    border-radius: 30px;
+    padding: 1rem;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    bottom: -30px;
+    height: 90%;
+    width: 55%;
+    border: 2.5px solid var(--black);
+
+}
+
+.s-container .swiper-button-prev{
+    left: 10rem;
+}
+
+.s-container .swiper-button-next{
+    right: 10rem;
+}
+
+.s-container .swiper-button-prev , .s-container .swiper-button-next{
+    color: black;
+    font-weight: bold;
+}
+
+.left-s{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.name{
+    display: flex;
+    flex-direction: column;
+}
+
+.name>:nth-child(1)
+{
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.name>:nth-child(2)
+{
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.left-s>:nth-child(2)
+{
+    font-weight: bold;
+    font-size: 2rem;
+}
+
+.left-s> :nth-child(3){
+    font-size: 1.3rem;
+    border: 2px solid var(--black);
+    padding: 5px 10px;
+    width: max-content;
+    border-radius: 15px;
+}
+
+.img-p{
+    
+    position: absolute;
+    right: 0;
+    width: 53%;
+    height: 100%;
+    overflow: hidden;
+    bottom: -2px;
+}
+
+@media screen and (max-width:856px){
+    .s-container.swiper{
+        width: 90%;
+        height: 10rem;
+    }
+
+    .s-container .swiper-button-prev , .s-container .swiper-button-next{
+        display: none;
+    }
+
+    
+
+}
